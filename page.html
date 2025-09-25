@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Chart.js</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+            
+             <p>Más información en <a href="https://www.chartjs.org/docs/latest/getting-started/" target="_blank">Chart.js</a>, y ahora de vuelta a la <a href="index.html">portada</a>.</p>
+        
+         <canvas id="aqui"></canvas>
+                  <canvas id="alla"></canvas>
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            new Chart("aqui", {
+                type: "bar",
+               data: {
+      labels: ['Metropolitana', 'Valparaiso', 'Biobío', 'Coquimbo', 'Atacama', 'Arica'],
+      datasets: [
+        {
+        
+        label: "Habitantes por región en Chile",
+        data: [7400741, 1896053, 1613059, 832864, 299180, 244569],
+
+          backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
+    ],
+
+     borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'
+    ],
+        
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+
+<script>
+            new Chart("alla", {
+                type: "line",
+               data: {
+      labels: ['Episodio 1 (Piloto)', 'Episodio 2', 'Episodio 3', 'Episodio 4', 'Episodio 5', 'Episodio 6'],
+      datasets: [
+        {
+        
+        label: "Cantidad de views en Youtube de The Amazing Digital Circus",
+        data: [394000000, 167000000, 75000000, 105000000, 77000000, 80000000],
+        borderWidth:1,
+        borderColor: "Red"
+
+    },
+    {
+         label: "Cantidad de views en Youtube de Murder Drones",
+        data: [73000000, 37000000, 41000000, 39000000, 31000000, 31000000],
+        borderWidth:1,
+        borderColor:"Blue"
+
+
+         
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+p{
+	text-align:center;
+	margin-top:2rem
+	/*
+	La historia del cuadratin(M, em)
+	R de ROOT(apela a la raiz)
+	*/
+}
